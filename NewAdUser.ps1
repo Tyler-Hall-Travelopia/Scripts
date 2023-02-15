@@ -7,7 +7,7 @@ $NewUserSurname = Read-Host "Enter the surname of the new user"
 
 # Construct the new user's name and email address
 $NewUserName = "$NewUserFirstName.$NewUserSurname"
-$NewUserEmail = "$NewUserName@tylerhall.com"
+$NewUserEmail = "$NewUserName@ email domain"
 
 # Check if the new user already exists
 if (Get-ADUser -Filter "SamAccountName -eq '$NewUserName'") {
